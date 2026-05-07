@@ -72,7 +72,7 @@ static int crypto_authenc_esn_decrypt(struct aead_request *req)
         scatterwalk_map_and_copy(tmp, src, 0, 8, 0);
         if (src == dst) {
                 scatterwalk_map_and_copy(tmp, dst, 4, 4, 1);
-                scatterwalk_map_and_copy(tmp + 1, dst, assoclen + cryptlen, 4, 1);
+                scatterwalk_map_and_copy(tmp + 1, dst, assoclen + cryptlen, 4, 1);   // <=[3]
                 dst = scatterwalk_ffwd(areq_ctx->dst, dst, 4);
         [...]
 ```
