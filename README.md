@@ -64,7 +64,7 @@ Chaining the two variants makes the blind spots cover each other, allowing root 
 
 ## Another "branded" "Dirty" series?
 
-Yes, yes, we know. However, this vulnerability is a descendant of "Dirty Pipe", and it is a bug class that "dirties" the `frag` member of `struct sk_buff`, so this name is the most appropriate.
+Yeah, yeah, I know. However, this vulnerability is a descendant of "Dirty Pipe", and it is a bug class that "dirties" the `frag` member of `struct sk_buff`, so this name is the most appropriate.
 
 ## What is its relationship with the "Copy Fail" vulnerability?
 
